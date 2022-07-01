@@ -282,8 +282,6 @@ background-color: #188CE8;
  }
 
 
-
-
 /* Услуги */
 .work-list{
   display: flex;
@@ -332,7 +330,6 @@ background-color: #188CE8;
 }
 
 .team .text {
-
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -342,6 +339,37 @@ background-color: #188CE8;
 
 .section-team {
   background-color: var(--second-background-color);
+}
+
+.social-media-list{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.social-media-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color:  #AFB1B8;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus{
+color: #ffffff;
+background-color: #2196f3;
+}
+
+.social-media-icon{
+  fill: currentColor;
 }
 
 /* Наши услуги */
