@@ -1,10 +1,11 @@
-:root {
+ :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --first-accent-color: #2196f3;
   --second-accent-color: #ffffff;
   --second-background-color: #f5f4fa;
-  --third-background-color: #2f303a;
+  --footer-background-color: #2F303A;
+  --hiro-background-color: #C4C4C4;
 }
 
 html{
@@ -149,8 +150,19 @@ img{
 
 /* Герой */
 .hiro{
+  display: flex;
+  padding: 200px 0;
+  background-color: var(--hiro-background-color);
   text-align: center;
-}
+  
+  max-width: 1600px;
+  max-height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hiro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
 
 .hiro-title {
   color: var(--second-accent-color);
@@ -163,11 +175,6 @@ img{
   text-transform: uppercase;
   width: 696px;
   margin: 0 auto;
-}
-/* Бекграунд временный, только чтобы увидеть белый текст */
-.hiro {
-  background-color: var(--third-background-color);
-  padding: 200px 0;
 }
 
 .hiro-button {
@@ -234,8 +241,9 @@ background-color: #188CE8;
 
 .feature-list{
  display: flex;
+ width: 270px;
 }
- 
+
 .feature-list .element{
   flex-basis: calc((100%-90px) / 4);
   margin-right: 30px;
@@ -245,11 +253,21 @@ background-color: #188CE8;
   margin-right: 0px;
 }
 
-.feature-list .element{
-  width: 270px;
-}
+.feature-icon{
+ display: flex;
+
+ align-items: center;
+ justify-content: center;
+ height: 120px;
+ width: 270px;
+ margin-bottom: 30px;
+ margin-right: 0px;
+ background-color: #F5F4FA;
+ border-radius: 4px;
+ }
 
 .feature-list .title {
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
 
@@ -261,7 +279,10 @@ background-color: #188CE8;
 
 .feature-list .text {
   line-height: 1.71;
+  width: 270px;
  }
+
+
 
 
 /* Услуги */
@@ -469,9 +490,9 @@ margin-bottom: 30px;
   color: var(--first-accent-color);
 }
 
-/* Бекграунд временный, только чтобы увидеть белый текст */
+
 .footer {
-  background-color: var(--third-background-color);
+  background-color: var(--footer-background-color);
 }
 
 .address .text {
