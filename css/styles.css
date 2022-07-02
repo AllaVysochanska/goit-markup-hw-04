@@ -146,7 +146,6 @@ img{
 }
 
 .link-icon{
-  color: var(--primary-text-color);
   margin-right: 10px;
 }
 
@@ -157,10 +156,6 @@ img{
 
 .link-icon{
   fill: currentColor;
-}
-
-.link-icon:hover{
-color: var(--first-accent-color);
 }
 
 /* Герой */
