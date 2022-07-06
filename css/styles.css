@@ -502,7 +502,7 @@ height: 92px;
   flex-wrap: wrap;
 }
 
-.work-cards .link{
+.work-cards .card-item{
   display: block;
 }
 
@@ -518,6 +518,10 @@ margin-bottom: 30px;
 
 .card:nth-last-child(-n + 3){
   margin-bottom: 0px;
+}
+
+.card-link{
+  text-decoration: none;
 }
 
 .work-cards .card-sign{
@@ -536,7 +540,6 @@ margin-bottom: 30px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 .work-cards .text {
@@ -546,7 +549,6 @@ margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 2;
-  text-decoration: none;
 }
 
 .work-cards .link:hover,
